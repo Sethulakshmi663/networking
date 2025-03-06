@@ -1,0 +1,21 @@
+echo "Enter the number:"
+read n
+a=0
+b=1
+echo "Fibonnacci series upto $n terms:"
+for ((i=0; i<n; i++))
+do
+        echo -n "$a"
+        next=$((a+b))
+        a=$b
+        b=$next
+done
+echo
+
+
+output
+
+Enter the number:
+10
+Fibonnacci sereies upto 10 terms:
+0112358132134
