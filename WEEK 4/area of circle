@@ -1,0 +1,16 @@
+alculate_area () {
+        local radius=$1
+        local area
+        area=$(echo "scale=2; 3.14159 * $radius * $radius" | bc)
+        echo  "area of circle with radius $radius is : $area"
+}
+echo "Enter the radius of circle:"
+read radius
+calculate_area "$radius"
+
+
+output
+
+Enter the radius of circle:
+5
+area of circle with radius 5 is : 78.53975
