@@ -1,0 +1,21 @@
+a=0
+b=1
+sum=0
+echo "Fibonnacci series upto 10 :"
+while [ $a -le 10 ]
+do
+        echo -n "$a"
+        sum=$((sum+a))
+        next=$((a+b))
+        a=$b
+        b=$next
+done
+echo
+echo "Sum of fibonnacci series upto 10 : $sum"
+
+output
+
+Fibonnacci series upto 10 :
+0112358
+Sum of fibonnacci series upto 10 : 20
+
