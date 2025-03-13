@@ -1,0 +1,36 @@
+echo "enter first  number: "
+read num1
+
+echo "enter opeartions: +,-,*,/: "
+read operation
+
+echo "enter second  number: "
+read num2
+
+
+case $operation in
+        +)
+                result=$((num1 + num2))
+                echo "result:  $num1 + $num2 = $result";;
+        -)
+                result=$((num1 - num2))
+                echo "result:  $num1 - $num2 = $result";;
+        \*)
+                result=$((num1 * num2))
+                echo "result:  $num1 * $num2 = $result";;
+        /)
+                result=$((num1 / num2))
+                echo "result:  $num1 / $num2 = $result";;
+        *)
+                echo "invalid operation .....";;
+esac
+
+output
+
+enter first  number: 
+10
+enter opeartions: +,-,*,/: 
+-
+enter second  number: 
+20
+result:  10 - 20 = -10
