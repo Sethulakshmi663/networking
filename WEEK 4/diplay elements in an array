@@ -1,0 +1,24 @@
+echo "Enter the elements of the array separated by spaces :"
+read -a array
+echo "The elements in the array are:"
+for element in "${array[@]}"
+do
+        echo $element
+done
+
+  output
+
+  Enter the elementsof the array separated by :
+1 2 4 5
+The elements in the array are:
+1
+2
+4
+5
+
+  Enter the elements of the array separated by spaces :
+apple kiwi mango
+The elements in the array are:
+apple
+kiwi
+mango
