@@ -1,0 +1,26 @@
+
+read -p "Enter a number: " num
+len=${#num}
+sum=0
+temp=$num
+while [ $temp -gt 0 ]
+do
+        digit=$((temp % 10))
+        sum=$((sum + digit ** len))
+        temp=$((temp / 10))
+done
+if [ $sum -eq $num ]; then
+        echo "$num is an armstrong number"
+else
+        echo "$num is not an armstrong number"
+fi
+
+
+
+output
+
+Enter a number: 153
+153 is an armstrong number
+
+Enter a number: 164
+164 is not an armstrong number
