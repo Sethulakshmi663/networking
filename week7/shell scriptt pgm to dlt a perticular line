@@ -1,0 +1,17 @@
+read line_num
+
+if [ ! -f "$filename" ]; then
+    echo "Error: File not found!"
+    exit 1
+fi
+sed -i "${line_num}d" "$filename"
+
+echo "Line $line_num deleted from $filename successfully!"
+
+output
+
+Enter the filename:
+abc.txt
+Enter the line number to delete:
+3
+Line 3 deleted from abc.txt successfully!
